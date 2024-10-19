@@ -313,8 +313,11 @@ void Game::play_game() {
         i++;
     }
 
-    md_printf("Your score: %d/6\r\n", score);
+    md_printf("Your score: %d/6\r\n\r\n", score);
     record_score(score);
+
+    md_printf("`bright white`Press a key!`white`");
+    md_getc();
 }
 
 bool Game::load() {
