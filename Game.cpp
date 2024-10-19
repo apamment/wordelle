@@ -72,7 +72,7 @@ void Game::score_this_month() {
     sqlite3_close(db);
 
     auto comp = [] (struct player_s a, struct player_s b) {
-        return a.score < b.score;
+        return a.score > b.score;
     };
 
     std::sort(scores.begin(), scores.end(), comp);
@@ -148,7 +148,7 @@ void Game::show_scores_last_month() {
     sqlite3_close(db);
 
     auto comp = [] (struct player_s a, struct player_s b) {
-        return a.score < b.score;
+        return a.score > b.score;
     };
     
     std::sort(scores.begin(), scores.end(), comp);
