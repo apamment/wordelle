@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.6)
+project(wordelle)
+add_subdirectory(magidoor)
+set (CMAKE_CXX_STANDARD 11)
+set(SOURCE_FILES main.cpp sqlite3.c Game.cpp)
+add_executable(wordelle ${SOURCE_FILES})
+target_link_libraries(wordelle mdoor)
