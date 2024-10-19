@@ -7,6 +7,11 @@ extern "C" {
 #include <string>
 #include <iostream>
 #include <ctime>
+#include <algorithm>
+
+#ifdef _MSC_VER
+#define strcasecmp stricmp
+#endif
 
 struct player_s {
     std::string player;
