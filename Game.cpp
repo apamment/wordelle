@@ -8,6 +8,7 @@ extern "C" {
 #include <iostream>
 #include <ctime>
 #include <algorithm>
+#include <cstring>
 
 #ifdef _MSC_VER
 #define strcasecmp stricmp
